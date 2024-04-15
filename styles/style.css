@@ -1,0 +1,308 @@
+/* style header and footer */
+body, html {
+    margin:0px;
+    min-height: 100%;
+    background-color: #ffdf76 ;
+    background-image: url("../images/icon.png"); background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: left;
+    scroll-behavior: smooth;
+
+    
+}
+h1 {text-align: center; color:#f1361d; text-shadow: 1px 2px 2px rgb(39, 39, 39); margin-top: 50px; font-size: 40px; margin-bottom:50px;}
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+h1 {font-family: "Roboto Slab", serif;
+    
+    font-weight: 500;
+  }
+h2 { font-family: "Timmana", sans-serif; font-weight: 600; color: rgb(255, 237, 237); text-shadow: 2px 2px 3px rgb(37, 37, 37); font-size: 33px; text-align: center;}
+nav {
+    z-index: 0;
+   
+    display: flex;
+    width:100%;
+    height: 200px;
+    border-bottom:solid thin;
+    margin: 0px;
+    background: rgb(5,89,117);
+    background: linear-gradient(35deg, rgba(5,89,117,1) 52%, rgba(0,0,0,1) 100%);
+    box-shadow: 1px 2px 4px grey;
+}
+section div { background-color: #98e5ff;}
+footer {
+    position:relative;
+    bottom:0;
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    height: fit-content;
+    border-top:solid thin;
+    justify-content: center;
+    margin: 0px;
+    box-sizing: border-box;
+    align-items: center;
+    background: rgb(5,89,117);
+    background: linear-gradient(10deg, rgba(5,89,117,1) 42%, rgba(0,0,0,1) 97%);
+}
+#links ul {padding:10px;}
+#links {display: flex;  width: 70%; margin-top:10px;color: rgb(238, 238, 228); justify-content: space-between; box-sizing: border-box; line-height: 30px;}
+footer p {color: rgb(238, 238, 228); font-size: 12px;}
+
+#nav ul {
+    display: flex;
+    height: fit-content;
+    margin: 0px;
+    flex-direction: row;
+    align-self: end;
+    padding-right: 40px;
+    margin-bottom: -10px;
+
+}
+
+#nav ul li a {display: block; text-decoration: none; font-size: 15px; box-shadow: 3px 2px 2px rgb(59, 59, 59);}
+#nav ul li a, .button  {
+    border:solid thin black ;
+    border-collapse: collapse;
+    padding:15px;
+    padding-left: 20px;
+    padding-right:20px;
+    margin-left: 10px;
+    background-color: #f1361d;
+    color: whitesmoke;
+    transition: background-color 0.5s ease-in-out;
+    list-style: none;
+    border:solid 1px rgb(0, 0, 0);
+    
+}
+#nav ul {list-style: none; z-index: 1;}
+
+
+#nav ul li a:hover, .button:hover, .progress:hover {cursor: pointer; background-color: #09233b; border:solid thin #ff7214;}
+
+
+
+
+
+/*style contact*/
+form {
+    width: 90vw;
+    min-height: 90vh;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#98e5ff;
+    margin-bottom: 100px;
+   
+    box-shadow: inset 1px 1px 7px rgb(78, 78, 78);
+    flex-direction: column;
+    
+    
+    margin-bottom:100px;
+    background-color:#ffdf76;
+   
+}
+
+form {flex-direction: column; width: 50vw;}
+form {
+    padding: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+form > * {
+    margin-bottom:20px;
+    width: 300px;
+}
+form>*:nth-child(odd){
+    font-size: 20px;
+}
+form >*:nth-child(even){
+    font-size: 20px;
+    width: 60%;
+}
+form .button {width:fit-content; font-size: 20px; margin-left: auto; margin-right:auto; margin-top: 20px;}
+img#banner {
+    position: relative;
+    top: -40px;
+    left:-495px;
+    z-index: 0;
+    
+}
+.contact img#banner {
+    left: -210px;
+}
+.products img#banner {
+    left: -310px;
+}
+.about img#banner {
+    left: -410px;
+}
+
+/*style home*/
+.home section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    border:solid 2px black;
+    box-shadow: inset 2px 5px 2px;
+    box-sizing: border-box;
+    
+}
+section div{
+    width:25%;
+    
+    height: auto;
+    opacity: 0.5;
+    border-bottom: solid thin #09233b;
+    
+    
+    
+}
+div#top {width:65%; display: flex; flex-direction: row;margin-left: auto;margin-right: auto; box-sizing: border-box;}
+div#top div img { width:100%; border:solid  5px rgb(255, 255, 255); box-sizing: border-box; }
+.home div p:not(.cta) {font-family: "Encode Sans Semi Expanded", sans-serif; padding:20px; font-size: 18px; box-shadow: inset 2px 2px 3px rgb(53, 53, 53) ; padding-bottom: 60px; margin-top:-7px; }
+footer p {box-shadow: none; margin-bottom: 20px; font-size: 15px;}
+p.cta {font-size:20px; margin-bottom:100px; box-shadow: 2px 2px 2px rgb(44, 44, 44); background-color: #f1361d; width:fit-content; padding: 30px; border-radius: 20px; transition: all 0.5s ease-out; color: azure; cursor: pointer; margin-left:auto;margin-right: auto;position: relative;}
+p.cta:hover {border: solid 2px rgb(246, 250, 0); padding:40px; background-color: #0c4070; font-size: 30px;}
+p.cta::before{content:url('../pictures/arrow2.png'); display: flex;position: absolute; left:-70px; top: 18px;}
+
+
+.home section div:hover {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    border:solid thin #fdd34a;
+}
+
+.home section img {
+   width: 100%;
+   height:100%;
+   
+   
+}
+/*style about page*/
+
+h3 {padding-top:50px;text-align: center;font-family: "Timmana", sans-serif; font-size: 28px; margin-top:10px; }
+.about section div.text {
+    margin-top: 50px;
+    width: 90%;
+    box-shadow: none;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    opacity: 1;
+    z-index: 1;
+    height: fit-content;
+    border: none;
+    box-shadow: inset 1px 5px 7px rgb(78, 78, 78);
+    
+    margin-bottom:50px;
+    background-color: #ffe693;
+
+}
+.about img:not(#banner){
+    width: 100%;
+    height: fit-content;
+    box-shadow: none;
+    margin-bottom: 0px;
+    
+}
+.about nav {
+    margin-bottom: 2px; box-shadow: 0px 2px 0px rgb(36, 36, 36);
+}
+#address{display: flex; height: fit-content; width: 70%; flex-direction: row; margin-bottom: 50px; margin-top:30px; margin-left: auto; margin-right: auto;} 
+
+#address ul {list-style: none;}
+#address ul li {line-height: 30px;}
+#locationHeading{margin-top:0px;padding: 0px;}
+#mapContainer {width:50%; opacity: 1; margin-left: auto;margin-right: auto; padding: 0px; height: auto; background-color:#ffdf76;}
+
+.about section p {font-family: "Encode Sans Semi Expanded", sans-serif; padding:25px; font-size: 18px; padding-bottom: 60px; line-height: 35px;}
+/*style products*/
+.products #product {
+    margin-top:50px;
+    width: 50%;
+    height: fit-content;
+    box-shadow: none;
+    margin-bottom: 50px;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px;
+    
+}
+.products img:not(#banner){
+    width: 100%;
+    
+}
+.products #product:hover {
+    background-color: #09233b; border-radius: 50%; transition: all 1s ease-in-out;transform: rotate(50deg);
+}
+.products h2{padding:50px; padding-bottom: 20px;}
+.products p:not(footer p){
+    padding:50px;
+    padding-top:0px;
+    font-family: "M PLUS 1 Code", monospace;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+#allProducts {display: flex; flex-wrap: wrap; width: 100%; height: fit-content; justify-content: center; border-top:solid thin #f1361d; margin-bottom:50px;flex-direction: row;}
+#allProducts div {padding:25px; margin:10px; background-color:#ffdf76; border: none; opacity: 1; width:20%; }
+#allProducts .button {width: 40%; padding: 15px;}
+#allProducts h2{padding-top:0px;}
+#allProducts div h3 {margin-top:0px; padding-top:10px;}
+#allProducts img {width: 100%; height: 100%;}
+#allProducts div.imgContainer{
+    display: block;
+    margin-left: auto; margin-right: auto; height: 220px; width: 100%; box-sizing: border-box;padding: 0px;
+}
+/*mobile styles*/
+@media only screen and (max-width: 768px){
+    section {
+        flex-direction: column;
+   }
+   
+   #nav ul {flex-direction: column;}
+   #nav {height: fit-content; padding-top:20px;}
+   form >*:nth-child(even){
+    font-size: 20px;
+    width: 100%;
+    }
+   div #commit {height: 400px;}
+   #banner {visibility: hidden;}
+   #slogan {visibility: hidden;}
+   .home section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border:solid 2px black;
+    box-shadow: inset 2px 5px 2px;
+}
+section div{
+    width:100%;
+    border:solid thin #f1dc1d;
+    height:300px;
+    
+}
+section#allProducts div {
+    height: fit-content; margin-left: 0px; margin-right: 0px; box-sizing: border-box;width: 100%;
+}
+section#allProducts div .imgContainer {
+    height: fit-content;
+}
+section#allProducts{flex-direction: column;}
+#links ul li {font-size: 12px;}
+#links ul {padding:10px}
+#address {flex-direction: column;}
+
+}
